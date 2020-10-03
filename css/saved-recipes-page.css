@@ -1,0 +1,217 @@
+/* Header Font */
+@import url("https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i");
+
+
+html, body {
+    position: relative;
+    overflow-x: hidden !important;
+    background: #9dc6a7;
+    margin-bottom: auto;
+    max-width: 100% !important;
+    padding: 0;
+}
+
+html {
+    height: 100vh; /* to keep footer at the bottom */
+    
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+/* page container displaying recipes */
+.container-fluid {
+    /* margin-top: -450px; */
+    margin-top: -55vh;
+}
+
+
+/* top section, first picture */
+.header-site {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background: #f3e6e3 url(/images/s.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width:100%;
+    height: 100vh;
+}
+
+/* svg */
+#curve {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+/* filling svg with color */
+#curve path {
+    fill: #9dc6a7;
+}
+
+/* filling remaining space after svg with color */
+.header-site.section2 {
+    width: 100%;
+    height: 100%;
+    background: #9dc6a7;
+    position: absolute;
+}
+
+/* top navbar */
+.navbar {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, 0.61);
+    display: flex;
+    font-size:18px;
+}
+
+/* hover on navbar */
+.fa-heart-o:hover, .fa-cutlery:hover, .fa-home:hover {
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+/* navbar icons */
+.fa-heart-o, .fa-cutlery, .fa-home {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: none;
+    color: darkgreen;
+}
+
+/* chef hat navbar */
+.navbar-brand {
+    height: auto;
+    transform: rotate(25deg);
+    max-width: 400px;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+
+.navbar-brand>img {
+    max-height: 50px;
+}
+
+/* main title */
+.display-2 {
+    font-size: 60px;
+    font-family: 'Playfair Display', serif;
+    padding-top: 5%;
+
+    background-image: url(/images/wood-grain-texture-table-surface-brown-stock-photo-design-5-500x333.jpg);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* saved recipes display */
+.card {
+    color: white;
+    background-image: url(/images/wood-grain-texture-table-surface-brown-stock-photo-design-5-500x333.jpg);
+}
+
+/* saved recipes anchor/link  */
+.card-body a {
+    color: white;
+}
+
+/* removing space between email and remove inside card */
+p {
+    margin-block-end: 0;
+}
+
+/* email field */
+#form {
+    margin-bottom: 30px;
+    margin-top: auto;
+    padding-top: 30px;
+}
+
+/* email legend */
+.form-legend {
+    text-align: center;
+    color: #335d2d;
+    font-family: 'Playfair Display', serif;   
+}
+
+/* send email button */
+.btn-primary {
+    color: #fff;
+    background-color: #335d2d;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: green;
+}
+
+/* trash icon */
+.trash-button {
+    padding-left: 0px;
+    color: white;
+}
+
+/* footer */
+#footer {
+    bottom: 0px;
+    width: 100%;
+    clear: both;
+    background-image: url(/images/wood-grain-texture-table-surface-brown-stock-photo-design-5-500x333.jpg);
+    z-index: 1;
+}
+
+#footer p {
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+    font-size: 12px;
+    color: white;
+}
+
+#footer a {
+    color: white;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+/* changes on small screens */
+@media only screen and (max-width: 700px) {
+    
+    .display-2 { 
+        text-align: center; 
+        font-size: 50px;
+    }
+
+    .navbar-brand>img {
+        display:block;
+        height:40px;
+    }
+
+    /* .container-fluid {
+        margin-top: -450px;
+    } */
+}
+
+@media only screen and (max-width: 1000px) {
+    .navbar-brand>img {
+        display:block;
+        height:50px;
+    }
+
+    /* .container-fluid {
+        margin-top: -350px;
+    } */
+}
+

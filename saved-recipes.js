@@ -16,11 +16,10 @@ document.addEventListener('DOMContentLoaded', function () {
 function renderRecipeList(local) {
     const lisLocalArray = local.map((list, index) => {
 
-
         return `
 
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
-            <div class="card align-items-center" id="${index}" style="height: 430px;">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3">
+            <div class="card align-items-left" id="${index}" style="height: auto;">
                 <a href="${list.Link}" target="_black"><img src="${list.Image}" class="card-img-top" alt="..."></a>
                 <div class="card-body">
                 <a href="${list.Link}" target="_black"><h5 class="card-title">${list.Title}</h5></a>
@@ -32,15 +31,9 @@ function renderRecipeList(local) {
             </div>
             </div>
                 `
-            //     <button class="btn" onclick="saveRecipe('${element.strMealThumb}', '${element.strSource}', '${element.strMeal}')"><i class="fa fa-heart" aria-hidden="true">
-            //     Flavorite this item
-            // </i></button>
-
     })
 
-
     return lisLocalArray.join("")
-
 
 }
 //remove recipe from saving
@@ -56,5 +49,4 @@ function remove(index) {
     let toString = JSON.stringify(recipeStorage);
     localStorage.setItem("recipeStorage", toString);
     cardContainer.innerHTML = renderRecipeList(recipeStorage)
-
 }

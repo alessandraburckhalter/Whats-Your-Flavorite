@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="/css/recipes-page.css">
+
+    <title>What's Your Flavorite?</title>
+</head>
+
+<body>
+    <!-- starting first section -->
+    <section class="header-site">
+
+        <!-- SVG code -->
+        <svg version="1.1" id="curve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" viewBox="0 0 1920 304" enable-background="new 0 0 1920 304" xml:space="preserve">
+            <path fill="#FFFFFF"
+                d="M0,274c0,0,195.28-174,579.28-124s580.147-76.408,736-108C1463.28,12,1920,0,1920,0v304H0V274z" />
+        </svg>
+
+        <!-- top nav bar -->
+        <nav class="navbar w-100 navbar-expand-lg navbar-light">
+            <a class="navbar-brand pull-right navbar-right" href="#">
+                <img src="/images/hat-removebg-preview.png" class="img-responsive" alt="chef hat"></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria- c
+                ontrols="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav d-flex align-items-md-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html"><i class="fa fa-home"> Home </i><span
+                                class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="recipes-page.html"><i class="fa fa-cutlery"> Recipes</i></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="saved-recipes-page.html"><i class="fa fa-heart-o"> Your Flavorites</i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Heading main title-->
+        <div class="row ">
+            <div class="col-12 header text-center">
+                <h2 class="display-2">Choose your flavorites!</h2>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- starting second section -->
+    <section class="section2">
+
+        <!-- left side bar -->
+        <div class="container">
+            <div class="container-fluid text-left">
+                <div class="row content">
+                    <div class="col-sm-4 sidenav left-side">
+
+                        <fieldset class="line">
+                            <legend class="pick-ingredients">Pick your ingredients</legend>
+                            <div id="meatBox">
+                                <fieldset>
+                                    <legend id="meatToggle" data-toggle="collapse" data-target="#meat"
+                                        aria-expanded="false" aria-controls="meat">Meat
+                                    </legend>
+                                    <div id="meat" class="collapse"></div>
+                                </fieldset>
+                            </div>
+
+                            <div id="seaFoodBox">
+                                <fieldset>
+                                    <legend id="seaFoodToggle" data-toggle="collapse" data-target="#seaFood"
+                                        aria-expanded="false" aria-controls="seaFood">Seafood</legend>
+                                    <div id="seaFood" class="collapse"></div>
+                                </fieldset>
+                            </div>
+
+
+                            <div id="veggiesBox" class="collapse">
+                                <fieldset>
+                                    <legend data-toggle="collapse" data-target="#veggies" aria-expanded="false"
+                                        aria-controls="veggies">Vegetables</legend>
+                                    <div id="veggies"><br></div>
+                                </fieldset>
+                            </div>
+
+
+                            <div id="fruitsBox">
+                                <fieldset>
+                                    <legend data-toggle="collapse" data-target="#fruits" aria-expanded="false"
+                                        aria-controls="fruits">Fruits</legend>
+                                    <div id="fruits" class="collapse"></div>
+                                </fieldset>
+                            </div>
+
+
+                            <div id="breadBox">
+                                <fieldset>
+                                    <legend data-toggle="collapse" data-target="#bread" aria-expanded="false"
+                                        aria-controls="bread">Carbs</legend>
+                                    <div id="bread" class="collapse"></div>
+                                </fieldset>
+                            </div>
+
+
+                            <div id="nutsBox">
+                                <fieldset>
+                                    <legend data-toggle="collapse" data-target="#nuts" aria-expanded="false"
+                                        aria-controls="nuts">Nuts</legend>
+                                    <div id="nuts" class="collapse"></div>
+                                </fieldset>
+                            </div>
+
+
+                            <div id="spicesBox">
+                                <fieldset>
+                                    <legend data-toggle="collapse" data-target="#spices" aria-expanded="false"
+                                        aria-controls="spices">Spices</legend>
+                                    <div id="spices" class="collapse"></div>
+                                </fieldset>
+                            </div>
+
+
+                            <div id="sugarsBox">
+                                <fieldset>
+                                    <legend data-toggle="collapse" data-target="#sugars" aria-expanded="false"
+                                        aria-controls="sugars">Sweets</legend>
+                                    <div id="sugars" class="collapse"></div>
+                                </fieldset>
+                            </div>
+
+
+                            <div id="fatsBox">
+                                <fieldset>
+                                    <legend data-toggle="collapse" data-target="#fats" aria-expanded="false"
+                                        aria-controls="fats">Oils</legend>
+                                    <div id="fats" class="collapse"></div>
+                                </fieldset>
+                            </div>
+
+
+                            <div id="powderBox">
+                                <fieldset>
+                                    <legend data-toggle="collapse" data-target="#powder" aria-expanded="false"
+                                        aria-controls="powder">Shorteners</legend>
+                                    <div id="powder" class="collapse"></div>
+                                </fieldset>
+                            </div>
+
+
+                            <div id="liquidsBox">
+                                <fieldset>
+                                    <legend data-toggle="collapse" data-target="#liquids" aria-expanded="false"
+                                        aria-controls="liquids">Liquids</legend>
+                                    <div id="liquids" class="collapse"></div>
+                                </fieldset>
+                            </div>
+
+                        </fieldset>
+                    </div>
+
+                    <!-- CARDS - RECIPES DISPLAY -->
+                    <div class="col-sm-8 text-left">
+                        <div class="row" id="recipes">
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+    </section>
+
+    <section class="section3">
+        <!-- Footer -->
+        <footer id="footer">
+            <p> <a href="https://www.linkedin.com/in/alessandra-burckhalter/" target="_blank">Alessandra</a> • <a
+                    href="https://www.linkedin.com/in/alison-manning-9a25391b1/" target="_blank">Alison</a> • <a
+                    href="https://www.linkedin.com/in/song8179/" target="_blank">Heeyoung</a> • <a
+                    href="https://www.linkedin.com/in/thor-hlavaty-7589431b5/" target="_blank">Thor</a> <br>Copyright
+                &copy;
+                2020</p>
+        </footer>
+
+    </section>
+
+    <!-- Optional JavaScript -->
+    <script src="index.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

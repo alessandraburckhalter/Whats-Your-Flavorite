@@ -35,7 +35,7 @@ function ingredientPopulate(list, id) {
     for (let index = 0; index < list.length; index++) {
         const element = list[index];
         //the id is the same as the items individual ingredient call in the api. If I can get a list of the selected ids, I'm in the money.
-        const listItem = `<input onclick="urlFinalizer('${element}')" class="ingredient" id=https://www.themealdb.com/api/json/v2/9973533/filter.php?i=${element.replace(" ", "_")} type="checkbox"><label for="${element}">${element} </label></input>`
+        const listItem = `<input onclick="urlFinalizer('${element}')" class="ingredient" id=https://www.themealdb.com/api/json/v2/9973533/filter.php?i=${element.replace(" ", "_")} type="checkbox"><label for="${element}">${element} </label> </input>`
         document.getElementById(id).innerHTML += listItem
     }
 }
